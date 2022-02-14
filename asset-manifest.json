@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Hope-Shop/static/css/main.84c6bffa.css",
+    "main.js": "/Hope-Shop/static/js/main.a1cc4322.js",
+    "static/media/slide1_image.jpg": "/Hope-Shop/static/media/slide1_image.6e9ed8860bedba56991f.jpg",
+    "static/media/product7.jpeg": "/Hope-Shop/static/media/product7.f9fef4f2161f2e73947c.jpeg",
+    "static/media/product3.jpeg": "/Hope-Shop/static/media/product3.60bd626a377a14e4962d.jpeg",
+    "static/media/product1.jpeg": "/Hope-Shop/static/media/product1.c2274045db839734766d.jpeg",
+    "static/media/product12.jpeg": "/Hope-Shop/static/media/product12.3d5845bb662f98639d44.jpeg",
+    "static/media/slide2_image.jpg": "/Hope-Shop/static/media/slide2_image.543dce5a397d30549c10.jpg",
+    "static/media/product8.jpeg": "/Hope-Shop/static/media/product8.2939ce200b8dbcf612b1.jpeg",
+    "static/media/product9.jpeg": "/Hope-Shop/static/media/product9.a6459cbb9695f78b34d0.jpeg",
+    "static/media/product10.jpeg": "/Hope-Shop/static/media/product10.468b5a2cc1bd5e29e919.jpeg",
+    "static/media/product4.jpeg": "/Hope-Shop/static/media/product4.b9f6f4bc322fb16e8cc4.jpeg",
+    "static/media/product6.jpeg": "/Hope-Shop/static/media/product6.6dfab01aa179775dc6ef.jpeg",
+    "static/media/banner-1.jpg": "/Hope-Shop/static/media/banner-1.e7df2f6f6ff415b20627.jpg",
+    "static/media/product11.jpeg": "/Hope-Shop/static/media/product11.43f0548dd81eaf89d39d.jpeg",
+    "static/media/product13.jpeg": "/Hope-Shop/static/media/product13.79d2e048566f8d849d2e.jpeg",
+    "static/media/banner-2.jpg": "/Hope-Shop/static/media/banner-2.30c596967d701d93cb08.jpg",
+    "static/media/banner-4.jpg": "/Hope-Shop/static/media/banner-4.fd5e6a9a24a191d43ae5.jpg",
+    "static/media/product2.jpeg": "/Hope-Shop/static/media/product2.89764036661d2187f5b3.jpeg",
+    "static/media/banner-5.jpg": "/Hope-Shop/static/media/banner-5.916a5da4260e7e5569fd.jpg",
+    "static/media/visa.png": "/Hope-Shop/static/media/visa.761189ee6ea629e54f5f.png",
+    "index.html": "/Hope-Shop/index.html",
+    "main.84c6bffa.css.map": "/Hope-Shop/static/css/main.84c6bffa.css.map",
+    "main.a1cc4322.js.map": "/Hope-Shop/static/js/main.a1cc4322.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84c6bffa.css",
+    "static/js/main.a1cc4322.js"
+  ]
+}
