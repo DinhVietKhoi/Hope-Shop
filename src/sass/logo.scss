@@ -1,0 +1,92 @@
+.logo{
+    margin-bottom: 20px;
+    & .container{
+        position: relative;
+        z-index: 9999;
+        overflow: hidden;
+        &:hover > .logo__click-button{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__container{
+        transition: all 0.3s;
+        flex-wrap: nowrap !important;
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__click{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        &-button{
+            position: absolute;
+            top:26px;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border: 2px solid #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(45deg);
+            border-radius: 5px;
+            z-index: 9999;
+            transition: all 0.2s linear;
+            opacity: 0;
+            visibility: hidden;
+            & i{
+                transform: rotate(-45deg);
+                font-size: 20px;
+            }
+            &:hover{
+                background-color: #333;
+                cursor: pointer;
+                & i{
+                    color:#fff;
+                }
+            }
+        }
+        &-next{
+            right:10px;
+        }
+        &-pre{
+            left: 10px;
+        }
+    }
+}
+@media (min-width:1201px){
+    
+}
+@media (min-width:992px) and (max-width:1200px){
+    .container{
+        width: 970px;
+        max-width: 970px ;
+    }
+}
+@media (max-width:991px) and (min-width:769px){
+    .logo{
+        .l-3{
+            flex:0 0 25%;
+            max-width: 25%;
+        }
+    }
+}
+@media (max-width:768px) and (min-width:481px){
+    .logo{
+        .m-4{
+            flex:0 0 33.3333333333333%;
+            max-width: 33.3333333333333%;
+        }
+    }
+}
+@media (max-width:480px){
+    .logo{
+        .n-6{
+            flex:0 0 50%;
+            max-width: 50%;
+        }
+    }
+}
