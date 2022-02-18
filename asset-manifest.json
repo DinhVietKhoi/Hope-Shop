@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hope-Shop/static/css/main.2d1f3530.css",
-    "main.js": "/Hope-Shop/static/js/main.759a69d8.js",
+    "main.css": "/Hope-Shop/static/css/main.f416c664.css",
+    "main.js": "/Hope-Shop/static/js/main.e721b2e7.js",
     "static/media/productt8.jpg": "/Hope-Shop/static/media/productt8.3bc204af37e5c610e7d0.jpg",
     "static/media/productt6.jpg": "/Hope-Shop/static/media/productt6.814efb753b9eb4f6eb06.jpg",
     "static/media/slide1_image.jpg": "/Hope-Shop/static/media/slide1_image.6e9ed8860bedba56991f.jpg",
@@ -28,14 +28,15 @@
     "static/media/banner-4.jpg": "/Hope-Shop/static/media/banner-4.fd5e6a9a24a191d43ae5.jpg",
     "static/media/product2.jpeg": "/Hope-Shop/static/media/product2.89764036661d2187f5b3.jpeg",
     "static/media/banner-5.jpg": "/Hope-Shop/static/media/banner-5.916a5da4260e7e5569fd.jpg",
+    "static/media/notfound.png": "/Hope-Shop/static/media/notfound.c29407202cf6c42871af.png",
     "static/media/productt9.jpg": "/Hope-Shop/static/media/productt9.9bbc626ffab3ee2a5683.jpg",
     "static/media/visa.png": "/Hope-Shop/static/media/visa.761189ee6ea629e54f5f.png",
     "index.html": "/Hope-Shop/index.html",
-    "main.2d1f3530.css.map": "/Hope-Shop/static/css/main.2d1f3530.css.map",
-    "main.759a69d8.js.map": "/Hope-Shop/static/js/main.759a69d8.js.map"
+    "main.f416c664.css.map": "/Hope-Shop/static/css/main.f416c664.css.map",
+    "main.e721b2e7.js.map": "/Hope-Shop/static/js/main.e721b2e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d1f3530.css",
-    "static/js/main.759a69d8.js"
+    "static/css/main.f416c664.css",
+    "static/js/main.e721b2e7.js"
   ]
 }
