@@ -79,10 +79,10 @@ function Header(props) {
                         return(
                           <div key={index} className='header__cart-product'>
                           <div className='header__cart-img'>
-                              <img src={n.img}></img>
+                              <img src={n.image}></img>
                             </div>
-                            <span>{n.name}</span>
-                            <span>{n.price}</span>
+                            <span>{n.title}</span>
+                            <p>${n.price}</p>
                           </div>
                         )
                       }

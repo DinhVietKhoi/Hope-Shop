@@ -181,6 +181,12 @@
             &:hover{
                 cursor: default;
             }
+            & span{
+                white-space: nowrap; 
+                width: 50%; 
+                overflow: hidden;
+                text-overflow: ellipsis; 
+            }
         }
         &-img{
             width: 50px;

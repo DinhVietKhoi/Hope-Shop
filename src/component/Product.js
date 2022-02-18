@@ -103,10 +103,11 @@ function Product(props) {
                     if(l.id<=8){
                         return [
                             <div key={l.id} className="product col c-3 l-6 m-12">
-                                <div className='product__overlay'></div>
                                 <Link className='product__img' to="/">
-                                    <img src={l.img}></img>
+                                    <img src={l.image}></img>
+                                    <div className='product__overlay'></div>
                                 </Link>
+
                                 <div className='product__control'>
                                     <div className='product__rate'>
                                         <div className='product__rate-star'>
@@ -125,8 +126,8 @@ function Product(props) {
                                     </div>
                                 </div>
                                 <div className='product__detail'>
-                                    <h5 className="product__name">{l.name}</h5>
-                                    <span className="product__price">${l.price}.00</span>
+                                    <h5 className="product__name">{l.title}</h5>
+                                    <span className="product__price">${l.price}</span>
                                 </div>
                             </div> 
                         ]
@@ -136,10 +137,11 @@ function Product(props) {
                     if(l.id<=12){
                         return [
                             <div key={l.id} className="product col c-3 l-6 m-12">
-                                <div className='product__overlay'></div>
                                 <Link className='product__img' to="/">
-                                    <img src={l.img}></img>
+                                    <img src={l.image}></img>
+                                    <div className='product__overlay'></div>
                                 </Link>
+
                                 <div className='product__control'>
                                     <div className='product__rate'>
                                         <div className='product__rate-star'>
@@ -158,8 +160,8 @@ function Product(props) {
                                     </div>
                                 </div>
                                 <div className='product__detail'>
-                                    <h5 className="product__name">{l.name}</h5>
-                                    <span className="product__price">${l.price}.00</span>
+                                    <h5 className="product__name">{l.title}</h5>
+                                    <span className="product__price">${l.price}</span>
                                 </div>
                             </div> 
                         ]

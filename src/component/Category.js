@@ -12,36 +12,37 @@ import product4 from '../assets/product4.jpeg'
 
 
 function Category(props) {
-  const [text,setText] =useState('ALL PRODUCT')
+  const [text,setText] =useState('ALL PRODUCTS')
   const [products,setproducts] = useState('A');
 
 const collecElement = useRef([]);
 
 const handleWatches = ()=>{
   // setText
-  setText("WATCHES");
-  setproducts('W')
+  setText("Men's clothing");
+  setproducts("men's clothing")
 }
 const handleClo = ()=>{
   // setText
-  setText("CLOTHING");
-  setproducts('C')
+  setText("Jewelery");
+  setproducts('jewelery')
 }
 const handleBack = ()=>{
   // setText
-  setText("BACKPACK");
-  setproducts('B')
+  setText("Electronics");
+  setproducts('electronics')
 }
 const handleGlass = ()=>{
   // setText
-  setText("GLASSES");
-  setproducts('G')
+  setText("women's clothing");
+  setproducts("women's clothing")
 }
 const handleAll = ()=>{
   // setText
-  setText("ALL PRODUCT");
+  setText("ALL PRODUCTS");
   setproducts('A')
 }
+console.log(products);
   return (
     <>
       <div className='category col c-3 m-12'>
@@ -50,22 +51,22 @@ const handleAll = ()=>{
           <ul className='category__collection-list' ref={collecElement}>
             <li className='category__collection-item'>
               <Link className='category__collection-link' to='' onClick={handleWatches} >
-                WATCHES
+                Men's clothing
               </Link>
             </li>
             <li className='category__collection-item'>
               <Link className='category__collection-link' to='' onClick={handleClo} >
-                CLOTHING
+                Jewelery
               </Link>
             </li>
             <li className='category__collection-item'>
               <Link className='category__collection-link' to='' onClick={handleBack} >
-                BACKPACK
+                Electronics
               </Link>
             </li>
             <li className='category__collection-item'>
               <Link className='category__collection-link' to='' onClick={handleGlass} >
-                GLASSES
+                Women's clothing
               </Link>
             </li>
             <li className='category__collection-item'>
@@ -149,11 +150,11 @@ const handleAll = ()=>{
         <div className='row'>
           {
             props.listProduct.map(function(l,index){
-            if(products===l.type){
+            if(products===l.category){
               return <div key={index} className="product col c-4 n-12">
               <div className='product__overlay'></div>
               <Link className='product__img' to="/">
-                  <img src={l.img}></img>
+                  <img src={l.image}></img>
               </Link>
               <div className='product__control'>
                   <div className='product__rate'>
@@ -173,8 +174,8 @@ const handleAll = ()=>{
                   </div>
               </div>
               <div className='product__detail'>
-                  <h5 className="product__name">{l.name}</h5>
-                  <span className="product__price">${l.price}.00</span>
+                  <h5 className="product__name">{l.title}</h5>
+                  <span className="product__price">${l.price}</span>
               </div>
           </div> 
               
@@ -183,7 +184,7 @@ const handleAll = ()=>{
               return <div key={index} className="product col c-4 n-12">
               <div className='product__overlay'></div>
               <Link className='product__img' to="/">
-                  <img src={l.img}></img>
+                  <img src={l.image}></img>
               </Link>
               <div className='product__control'>
                   <div className='product__rate'>
@@ -203,8 +204,8 @@ const handleAll = ()=>{
                   </div>
               </div>
               <div className='product__detail'>
-                  <h5 className="product__name">{l.name}</h5>
-                  <span className="product__price">${l.price}.00</span>
+                  <h5 className="product__name">{l.title}</h5>
+                  <span className="product__price">${l.price}</span>
               </div>
           </div> 
               
