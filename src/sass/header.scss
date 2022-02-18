@@ -1,4 +1,9 @@
 .header{
+    // width: 100%;
+    // position: fixed;
+    // top:0;
+    // z-index: 999999;
+    background-color: #fff;
     &__above{
         font-size: 14px;
         width: 100%;
@@ -37,6 +42,13 @@
         justify-content: center;
     }
     &__right{
+        &-number{
+            padding: 5px 7px;
+            background-color: #333;
+            border-radius: 100%;
+            color:#fff;
+            margin-left: 5px;
+        }
         &-list{
             display: flex;
             flex-direction: row;
@@ -76,7 +88,8 @@
         &-cart:hover > .header__cart{
             opacity:1;
             visibility:visible;
-            height: 120px;
+            max-height: 1000px;
+            height: 200px;
             top:30px
         }
     }
@@ -144,28 +157,58 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         padding: 10px;
         position: absolute;
         top:20px;
         right: 0;
         width: 250px;
-        height: 0;
+        max-height: 100px;
+        height: 100px;
         color:#666666;
-        overflow: hidden;
+        overflow-y: auto;
         opacity: 0;
         visibility: hidden;
         transition: all 0.4s;
-        & button{
+        &-product{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin: 5px 0;
+            border: 3px solid #333;
+            &:hover{
+                cursor: default;
+            }
+        }
+        &-img{
+            width: 50px;
+            height: 55px;
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        & a{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border: none;
             color:#ffffff;
             background-color: #AFAFAF;
             margin:0 10px;
-            height: 40px;
+            width: 60%;
+            padding: 15px 0;
+            transition: all 0.3s;
+            border-radius: 10px;
             &:hover{
                 background-color: red;
                 cursor: pointer;
             }
         }
+        
     }
     &__below{
         width: 100%;
@@ -206,7 +249,7 @@
         }
         &-link{
             font-size: 18px;
-            padding:20px 20px;
+            padding:0 15px;
             font-weight: bold;
             color: #222;
             text-decoration: none;

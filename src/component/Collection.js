@@ -35,11 +35,11 @@ function Collection() {
     <div className='collection'>
         <div className='container'>
             <div className='collection__container'>
-                {imageList.map(i =>[
-                    <div key={i.id} className='collection__frame'>
+                {imageList.map((i,index) =>[
+                    <div key={index} className='collection__frame'>
                         <img className='collection__image' src={i.image}></img>
                         <span className='collection__title'>collection for ladies</span>
-                        <Link to="/" className='collection__button'>
+                        <Link to="/Products" className='collection__button'>
                             Shop The Collection
                             <img src={rightIcon}></img>
                         </Link>

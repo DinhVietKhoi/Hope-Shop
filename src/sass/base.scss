@@ -34,6 +34,14 @@
     flex: 0 0 16.6666666666667%;
     max-width: 16.6666666666667%;
 }
+.c-9{
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.c-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 @media (min-width:1201px){
     .container{
         width: 1170px;
@@ -59,6 +67,9 @@
     }
 }
 @media (max-width:480px){
+    .row{
+        margin: 0;
+    }
     .container{
         width: 300px ;
         max-width: 300px ;

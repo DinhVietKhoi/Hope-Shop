@@ -34,6 +34,9 @@
         }
     }
     &__extend{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto;
         margin-bottom: 60px;
         & button{
@@ -49,6 +52,9 @@
                 border: 1px solid red;
 
             }
+        }
+        & button:nth-child(2){
+            display: none;
         }
     }
 }

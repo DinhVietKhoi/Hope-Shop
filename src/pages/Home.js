@@ -1,17 +1,20 @@
+import { useState } from 'react'
 import Collection from '../component/Collection'
 import Contact from '../component/Contact'
 import Featured from '../component/Featured'
-import Logo from '../component/Logo'
 import Slider from '../component/Slider'
 
-function Home() {
+
+function Home(props) {
   return (
     <>
       <Slider />
       <Collection />
-      <Featured />
+      <Featured 
+        addProduct={props.addProduct}
+        listProduct = {props.listProduct}
+      />
       <Contact />
-      <Logo />
     </>
     
   )

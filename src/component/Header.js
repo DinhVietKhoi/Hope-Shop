@@ -1,12 +1,15 @@
-import { useRef } from 'react'
+import { render } from '@testing-library/react'
+import { useRef, useState } from 'react'
 import {Link} from 'react-router-dom'
 import logo from '../assets/logo.png'
 import '../sass/base.scss'
 import '../sass/header.scss'
 
-function Header() {
+function Header(props) {
+  const [cartProduct,setCartproduct] = useState([]);
   const navBar = useRef(null); 
   let checked = true;
+  
   const handleMenu= ()=>{
     if(checked === true){
       navBar.current.classList.add('active');
@@ -24,7 +27,7 @@ function Header() {
           <div className='header__left'>
             <div className='header__search'>
               <input className='header__input' placeholder='Search our store'></input>
-              <i className="fa-solid fa-magnifying-glass"></i>
+              <i className="fa-solid fa-magnifying-glass" ></i>
             </div>
           </div>
           <div className='header__middle'>
@@ -38,7 +41,7 @@ function Header() {
                   <span>SETTING</span>
                   <ul>
                     <li>
-                      <Link to='/Account'>
+                      <Link to='/Account' >
                         My Account
                       </Link>
                     </li>
@@ -66,10 +69,26 @@ function Header() {
                 </div>
               </li>
               <li className='header__right-item header__right-cart'>
-                <Link className='header__right-link' to="/Cart"><i className="fa-solid fa-cart-shopping"></i>Shopping Cart</Link>
+                <span className='header__right-link' ><i className="fa-solid fa-cart-shopping"></i>Shopping Cart
+                <span className='header__right-number'>{props.product.length}</span>
+                </span>
               <div className='header__cart'>
-                <span>Your cart currently empty</span>
-                <button>CHECKOUT</button>
+                {
+                    props.product.length>0?props.product.map((n,index)=>{
+                      if(n.id>0){
+                        return(
+                          <div key={index} className='header__cart-product'>
+                          <div className='header__cart-img'>
+                              <img src={n.img}></img>
+                            </div>
+                            <span>{n.name}</span>
+                            <span>{n.price}</span>
+                          </div>
+                        )
+                      }
+                    }):<span>Your cart is currently empty.</span>
+                }
+                <Link to="/Cart">Go to cart</Link>
               </div>
               </li>
             </ul>
@@ -82,16 +101,17 @@ function Header() {
                 <Link className='header__navbar-link' to="/">Home</Link>
               </li>
               <li className='header__navbar-item'>
-                <Link className='header__navbar-link' to="/a">Product</Link>
+                <Link className='header__navbar-link' to="/Products">Product</Link>
               </li>
               <li className='header__navbar-item'>
-                <Link className='header__navbar-link' to="/">Blog</Link>
+                <Link className='header__navbar-link' to="/Cart">Cart</Link>
+
+              </li>
+              <li className='header__navbar-item'>
+                <Link className='header__navbar-link' to="/Blog">Blog</Link>
               </li>
               <li className='header__navbar-item'>
                 <Link className='header__navbar-link' to="/">Contact</Link>
-              </li>
-              <li className='header__navbar-item'>
-                <Link className='header__navbar-link' to="/">About Us</Link>
               </li>
               <li className='header__navbar-item'>
                 <Link className='header__navbar-link' to="/">404</Link>
@@ -117,7 +137,7 @@ function Header() {
                     </Link>
                   </li>
                   <li className='menu__item'>
-                    <Link className='menu__link' to='/'>
+                    <Link className='menu__link' to='/Products'>
                       Product
                     </Link>
                   </li>

@@ -15,9 +15,11 @@ import product9 from '../assets/product10.jpeg'
 import product10 from '../assets/product11.jpeg'
 import product11 from '../assets/product12.jpeg'
 import product12 from '../assets/product13.jpeg'
+import { useState } from 'react'
 
 
-function Product() {
+function Product(props) {
+    
     const listProduct=[
         {
             id:1,
@@ -92,38 +94,79 @@ function Product() {
             img:product12
         }
     ]
+    // console.log(props.extend);
   return (
     <>
         {
-            listProduct.map(l =>[
-                <div key={l.id} className="product col c-3 l-6 m-12">
-                    <div className='product__overlay'></div>
-                    <Link className='product__img' to="/">
-                        <img src={l.img}></img>
-                    </Link>
-                    <div className='product__control'>
-                        <div className='product__rate'>
-                            <div className='product__rate-star'>
-                                <i className="fa-solid fa-star"></i>
-                                <i className="fa-solid fa-star"></i>
-                                <i className="fa-solid fa-star"></i>
-                                <i className="fa-solid fa-star"></i>
-                                <i className="fa-solid fa-star"></i>
-                            </div>
-                            <span>No review</span>
-                        </div>
-                        <div className='product__add'>
-                            <button>ADD TO CART</button>
-                            <Link to='/'><i className="fa-solid fa-eye" ></i></Link>
-                            <Link to='/'><i className="fa-solid fa-heart" ></i></Link>
-                        </div>
-                    </div>
-                    <div className='product__detail'>
-                        <h5 className="product__name">{l.name}</h5>
-                        <span className="product__price">{l.price}</span>
-                    </div>
-                </div>  
-            ])
+            props.listProduct.map(function(l){
+                if(props.extend === true){
+                    if(l.id<=8){
+                        return [
+                            <div key={l.id} className="product col c-3 l-6 m-12">
+                                <div className='product__overlay'></div>
+                                <Link className='product__img' to="/">
+                                    <img src={l.img}></img>
+                                </Link>
+                                <div className='product__control'>
+                                    <div className='product__rate'>
+                                        <div className='product__rate-star'>
+                                            <i className="fa-solid fa-star"></i>
+                                            <i className="fa-solid fa-star"></i>
+                                            <i className="fa-solid fa-star"></i>
+                                            <i className="fa-solid fa-star"></i>
+                                            <i className="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>No review</span>
+                                    </div>
+                                    <div className='product__add'>
+                                        <button onClick={()=>props.addProduct(l)}>ADD TO CART</button>
+                                        <Link to='/'><i className="fa-solid fa-eye" ></i></Link>
+                                        <Link to='/'><i className="fa-solid fa-heart" ></i></Link>
+                                    </div>
+                                </div>
+                                <div className='product__detail'>
+                                    <h5 className="product__name">{l.name}</h5>
+                                    <span className="product__price">${l.price}.00</span>
+                                </div>
+                            </div> 
+                        ]
+                    }
+                }
+                else if(props.extend === false){
+                    if(l.id<=12){
+                        return [
+                            <div key={l.id} className="product col c-3 l-6 m-12">
+                                <div className='product__overlay'></div>
+                                <Link className='product__img' to="/">
+                                    <img src={l.img}></img>
+                                </Link>
+                                <div className='product__control'>
+                                    <div className='product__rate'>
+                                        <div className='product__rate-star'>
+                                            <i className="fa-solid fa-star"></i>
+                                            <i className="fa-solid fa-star"></i>
+                                            <i className="fa-solid fa-star"></i>
+                                            <i className="fa-solid fa-star"></i>
+                                            <i className="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>No review</span>
+                                    </div>
+                                    <div className='product__add'>
+                                        <button onClick={()=>props.addProduct(l)}>ADD TO CART</button>
+                                        <Link to='/'><i className="fa-solid fa-eye" ></i></Link>
+                                        <Link to='/'><i className="fa-solid fa-heart" ></i></Link>
+                                    </div>
+                                </div>
+                                <div className='product__detail'>
+                                    <h5 className="product__name">{l.name}</h5>
+                                    <span className="product__price">${l.price}.00</span>
+                                </div>
+                            </div> 
+                        ]
+                    }
+                }
+                
+            })
         }     
     </>
   )
