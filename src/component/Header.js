@@ -111,10 +111,10 @@ function Header(props) {
                 <Link className='header__navbar-link' to="/Blog">Blog</Link>
               </li>
               <li className='header__navbar-item'>
-                <Link className='header__navbar-link' to="/">Contact</Link>
+                <Link className='header__navbar-link' to="/Contact">Contact</Link>
               </li>
               <li className='header__navbar-item'>
-                <Link className='header__navbar-link' to="/">404</Link>
+                <Link className='header__navbar-link' to="/Notfound">404</Link>
               </li>
             </ul>
           </div>

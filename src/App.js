@@ -20,6 +20,10 @@ import product11 from './assets/productt12.jpg'
 import product12 from './assets/productt12.jpg'
 
 function App() {
+  // const [listproduct,setListproduct] = useState([])
+  // useEffect(()=>{
+  //   const fetch = async
+  // })
   const listProduct=[
     {
         id:1,

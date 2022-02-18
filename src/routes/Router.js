@@ -4,6 +4,7 @@ import Home from '../pages/Home'
 import Header from '../component/Header'
 import Products from '../pages/Products'
 import Cart from '../pages/Cart'
+import Notfound from '../pages/Notfound'
 function Router(props) {
   return (
     <Routes>
@@ -36,6 +37,7 @@ function Router(props) {
             />
           }
         />
+        <Route path='*' element={<Notfound />}/>
     </Routes>
   )
 }
