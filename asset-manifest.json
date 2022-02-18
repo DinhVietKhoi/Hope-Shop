@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Hope-Shop/static/css/main.2d1f3530.css",
-    "main.js": "/Hope-Shop/static/js/main.54c145cf.js",
+    "main.js": "/Hope-Shop/static/js/main.759a69d8.js",
     "static/media/productt8.jpg": "/Hope-Shop/static/media/productt8.3bc204af37e5c610e7d0.jpg",
     "static/media/productt6.jpg": "/Hope-Shop/static/media/productt6.814efb753b9eb4f6eb06.jpg",
     "static/media/slide1_image.jpg": "/Hope-Shop/static/media/slide1_image.6e9ed8860bedba56991f.jpg",
@@ -32,10 +32,10 @@
     "static/media/visa.png": "/Hope-Shop/static/media/visa.761189ee6ea629e54f5f.png",
     "index.html": "/Hope-Shop/index.html",
     "main.2d1f3530.css.map": "/Hope-Shop/static/css/main.2d1f3530.css.map",
-    "main.54c145cf.js.map": "/Hope-Shop/static/js/main.54c145cf.js.map"
+    "main.759a69d8.js.map": "/Hope-Shop/static/js/main.759a69d8.js.map"
   },
   "entrypoints": [
     "static/css/main.2d1f3530.css",
-    "static/js/main.54c145cf.js"
+    "static/js/main.759a69d8.js"
   ]
 }
