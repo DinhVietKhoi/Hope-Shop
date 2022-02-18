@@ -36,12 +36,6 @@ function Router(props) {
             />
           }
         />
-        <Route 
-          path='/Hope-Shop' 
-          element=
-            {<Home />
-          }
-        />
     </Routes>
   )
 }
