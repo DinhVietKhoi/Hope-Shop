@@ -19,7 +19,6 @@ import { useState } from 'react'
 
 
 function Product(props) {
-    
     const listProduct=[
         {
             id:1,
@@ -107,7 +106,6 @@ function Product(props) {
                                     <img src={l.image}></img>
                                     <div className='product__overlay'></div>
                                 </Link>
-
                                 <div className='product__control'>
                                     <div className='product__rate'>
                                         <div className='product__rate-star'>
@@ -141,7 +139,6 @@ function Product(props) {
                                     <img src={l.image}></img>
                                     <div className='product__overlay'></div>
                                 </Link>
-
                                 <div className='product__control'>
                                     <div className='product__rate'>
                                         <div className='product__rate-star'>
