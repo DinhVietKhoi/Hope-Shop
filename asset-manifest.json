@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hope-Shop/static/css/main.97e6e5e1.css",
-    "main.js": "/Hope-Shop/static/js/main.5a78117f.js",
+    "main.css": "/Hope-Shop/static/css/main.8fe9aa6f.css",
+    "main.js": "/Hope-Shop/static/js/main.c052891c.js",
     "static/media/slide1_image.jpg": "/Hope-Shop/static/media/slide1_image.6e9ed8860bedba56991f.jpg",
     "static/media/product7.jpeg": "/Hope-Shop/static/media/product7.f9fef4f2161f2e73947c.jpeg",
     "static/media/product3.jpeg": "/Hope-Shop/static/media/product3.60bd626a377a14e4962d.jpeg",
@@ -25,11 +25,11 @@
     "static/media/notfound.png": "/Hope-Shop/static/media/notfound.c29407202cf6c42871af.png",
     "static/media/visa.png": "/Hope-Shop/static/media/visa.761189ee6ea629e54f5f.png",
     "index.html": "/Hope-Shop/index.html",
-    "main.97e6e5e1.css.map": "/Hope-Shop/static/css/main.97e6e5e1.css.map",
-    "main.5a78117f.js.map": "/Hope-Shop/static/js/main.5a78117f.js.map"
+    "main.8fe9aa6f.css.map": "/Hope-Shop/static/css/main.8fe9aa6f.css.map",
+    "main.c052891c.js.map": "/Hope-Shop/static/js/main.c052891c.js.map"
   },
   "entrypoints": [
-    "static/css/main.97e6e5e1.css",
-    "static/js/main.5a78117f.js"
+    "static/css/main.8fe9aa6f.css",
+    "static/js/main.c052891c.js"
   ]
 }
