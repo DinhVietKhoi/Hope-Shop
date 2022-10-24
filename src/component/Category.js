@@ -152,9 +152,10 @@ console.log(products);
             props.listProduct.map(function(l,index){
             if(products===l.category){
               return <div key={index} className="product col c-4 n-12">
-              <div className='product__overlay'></div>
               <Link className='product__img' to="/">
                   <img src={l.image}></img>
+              <div className='product__overlay'></div>
+
               </Link>
               <div className='product__control'>
                   <div className='product__rate'>
@@ -182,9 +183,10 @@ console.log(products);
             }
             else if(products==='A'){
               return <div key={index} className="product col c-4 n-12">
-              <div className='product__overlay'></div>
               <Link className='product__img' to="/">
                   <img src={l.image}></img>
+              <div className='product__overlay'></div>
+
               </Link>
               <div className='product__control'>
                   <div className='product__rate'>

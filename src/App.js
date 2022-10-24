@@ -12,7 +12,7 @@ function App() {
   const [listProduct,setListproduct] = useState([])
   useEffect(()=>{
     try{
-      const fetchApi = async ()=>{
+        const fetchApi = async ()=>{
         const response = await fetch(apiString)
         const responseJson = await response.json()
         // console.log(responseJson);
